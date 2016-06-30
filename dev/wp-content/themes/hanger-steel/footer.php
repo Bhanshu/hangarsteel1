@@ -123,8 +123,26 @@
 					maxlength: 2000
 				},
 			},
-		
+		messages: {
+				
+				email: {
+					required: ""
+					
+				},
+				phone: {
+					required:""
+				   
+					
+				},
+			},
+		 
+   errorPlacement: function (error, element) {
+	     jQuery(".error-form").show(); 
+   },
 		submitHandler: function(form) {
+			    jQuery(".error-form").hide(); 
+			  
+		   
 var First_name1 = jQuery('#firstname').val();
 var last_name1 = jQuery('#lastname').val();
 var phone1 = jQuery('#phone').val();
@@ -157,6 +175,7 @@ success:function(data)
 // else
 // {
 		jQuery("#loading_sec").hide();
+
 // jQuery("#success_form").empty().append("Success");
 jQuery(".success").show();
 window.setTimeout('location.reload()', 3000);
@@ -166,6 +185,7 @@ jQuery('form').clearForm();
 }
 });
 }
+
 });
 	 });
 
@@ -243,7 +263,25 @@ jQuery('form').clearForm();
 				},
 				
 			},
+			messages: {
+				
+				email1: {
+					required: ""
+					
+				},
+				pphone: {
+					required:""
+				   
+					
+				},
+			},
+			errorPlacement: function (error, element) {
+	     jQuery(".error-form").show(); 
+   },
+		 
 				submitHandler: function(form) {
+					jQuery(".error-form").hide(); 
+					
 var name1 = jQuery('#name').val();
 var company1 = jQuery('#company').val();
 var address1 = jQuery('#address').val();
@@ -278,7 +316,7 @@ data:{name1:name1,company1:company1,address1:address1,email2:email2,phone1:phone
 success:function(data) 
 {
 jQuery("#loading_sec").hide();
-jQuery("#quoteform").hide();
+
 // jQuery("#success_form").empty().append("<h2>Success</h2>");
 jQuery(".success").show();
 window.setTimeout('location.reload()', 3000);
@@ -363,7 +401,26 @@ jQuery('form').clearForm();
 				},
 				
 			},
+			messages: {
+				
+				emaill: {
+					required: ""
+					
+				},
+				phn: {
+					required:""
+				   
+					
+				},
+			},
+		errorPlacement: function (error, element) {
+	     jQuery(".error-form").show(); 
+   },
+
 		submitHandler: function(form) {
+			jQuery(".error-form").hide(); 
+					
+			
 var First_name1 = jQuery('#firstname').val();
 var last_name1 = jQuery('#lastname').val();
 var phone1 = jQuery('#phn').val();
@@ -381,7 +438,7 @@ beforeSend: function() {
 success:function(data) 
 {
 	jQuery("#loading_sec").hide();
-jQuery("#contact_form").hide();
+
 jQuery(".success").show();
 window.setTimeout('location.reload()', 3000);
 jQuery('form').clearForm();

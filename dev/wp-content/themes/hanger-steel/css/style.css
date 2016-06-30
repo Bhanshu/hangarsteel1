@@ -154,6 +154,30 @@ nav.navbar {
     background-color: transparent;
 }
 
+.navbar-toggle[aria-expanded="true"] .m-one {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    margin-top: 6px;
+}
+    
+.navbar-toggle[aria-expanded="true"] .m-three {
+    margin-bottom: 8px;
+    margin-top: -10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+    
+.navbar-toggle[aria-expanded="true"] .m-two {
+    visibility: hidden;
+}
+
+
 .carousel {
     margin-top: 10px;
 }
@@ -1756,9 +1780,6 @@ font-size:34px;
 /*============================= Banner =============================*/    
 .banner .carousel-indicators {
     bottom: 15px !important;
-    left:0;
-    right:0;
-    margin:auto;
 }
     .capt-banner{top:25%;}
 .capt-banner > a {

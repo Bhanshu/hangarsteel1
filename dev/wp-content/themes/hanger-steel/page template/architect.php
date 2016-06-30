@@ -182,6 +182,11 @@ function get_numerics ($str)
                        <div class="form-group">
                          </div>
 					   <button id="submit" class="btn btn-default"  disabled>Submit</button>
+					   <div class="error-form" style="display:none;">
+					   <div id="error_form" >
+						   <h2> Please fill all the required fields</h2>
+				    </div>
+					</div>
                     </form>
 					<div id="loading_sec" style="display:none" align="center">
 						   <img src="<?php echo  get_template_directory_uri(); ?>/images/loading1.gif" id="loader">

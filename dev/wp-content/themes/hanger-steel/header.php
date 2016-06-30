@@ -34,9 +34,9 @@
                     <div class="navbar-header">
                         <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
                             <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                            <span class="icon-bar m-one"></span>
+                            <span class="icon-bar m-two"></span>
+                            <span class="icon-bar m-three"></span>
                         </button>
                         <a href="<?php echo esc_url( get_permalink(5) ); ?>" class="navbar-brand"><img src="<?php echo the_field('hs_logo',5) ?>" alt="logo" /></a>
                     </div>
