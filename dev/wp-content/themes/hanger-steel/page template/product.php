@@ -143,7 +143,7 @@ function get_numerics ($str)
 							<?php
 							}?></a><span></span></div>
                         <a href="<?php the_permalink(); ?>"><h2><?php the_title();?></h2></a>
-                        <p><?php the_excerpt();?></p>
+                        <?php the_excerpt();?>
                     </div>
 					<?php endwhile; wp_reset_query(); ?>
                     <!--<div class="product-item">

@@ -165,7 +165,7 @@ function get_numerics ($str)
                             </label>
                         </div>
                         <div class="form-group doc-arc">
-                            <label for="exampleInputFile">Attachment:</label>
+                            <label for="exampleInputFile">Attachment :</label>
                             <!--<input type="file" class="inputfile" name="uploaded"  value="upload">-->
 							<input id="file_upload" name="filee" type="file" multiple="true" class="valid inputfile" onchange="change_file_stru();">
                             <label>Browse</label>
@@ -182,7 +182,7 @@ function get_numerics ($str)
                        <div class="form-group">
                          </div>
 					   <button id="submit" class="btn btn-default"  disabled>Submit</button>
-					   <div class="error-form" style="display:none;">
+					   <div class="error-form form_one" style="display:none;">
 					   <div id="error_form" >
 						   <h2> Please fill all the required fields</h2>
 				    </div>

@@ -178,7 +178,7 @@ success:function(data)
 
 // jQuery("#success_form").empty().append("Success");
 jQuery(".success").show();
-window.setTimeout('location.reload()', 3000);
+window.setTimeout('location.reload()', 1500);
 jQuery('form').clearForm();
 
 // }
@@ -319,7 +319,7 @@ jQuery("#loading_sec").hide();
 
 // jQuery("#success_form").empty().append("<h2>Success</h2>");
 jQuery(".success").show();
-window.setTimeout('location.reload()', 3000);
+window.setTimeout('location.reload()', 1500);
 jQuery('form').clearForm();
 
 }
@@ -440,7 +440,7 @@ success:function(data)
 	jQuery("#loading_sec").hide();
 
 jQuery(".success").show();
-window.setTimeout('location.reload()', 3000);
+window.setTimeout('location.reload()', 1500);
 jQuery('form').clearForm();
 }
 

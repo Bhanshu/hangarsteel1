@@ -521,6 +521,14 @@ nav.navbar {
     padding-left: 10px;
     text-transform: uppercase;
 }
+.footer-address a, .divide-3 a{-webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;}
+.footer-address a:hover{color:#d99a01;}
+.last-contact a:hover{color:#d99a01;}
+
 
 .footer-menu {
     display: inline-block;
@@ -1511,14 +1519,77 @@ arcfilename {
     top: 0;
     font-size: 20px;
     /*text-transform: uppercase;*/
-    color: #c58c00;
+    color: #090;
     height:30px;
 }
+.success #success_form h2{color: #090;}
 #loading_sec{opacity: .5;}
 
+
+.form-control:focus{box-shadow: none !important;}
+
+.form-control.error{border-color: #f11 !important;}
+#error_form > h2 {
+    border: 1px solid #f11;
+    color: #f11;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: none;
+}
 /*================================= 404 Page =================================*/
 .error-404.not-found .page-content{ display:none;}
 .page-header{ border:none; box-shadow:none; text-align: center; background: transparent; color: #d99a01;}
+
+.err {
+    font-family: arial;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 0;
+}
+.error-form.form_one, .error-form.form_two, .error-form.form_three{position: relative;}
+
+.error-form div {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -27px;
+    margin: auto;
+}   
+
+
+
+.rc-anchor-error-msg-container{display:none !important;}
+.recaptcha-checkbox-expired .recaptcha-checkbox-border, .recaptcha-checkbox-expired .recaptcha-checkbox-spinner-gif{border:0 !important;}
+
+
+
+#html5box-html5-lightbox::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ vertical-align: middle;
+}
+#html5-lightbox-box {
+ display: inline-block !important;
+ margin: 10px 0 !important;
+ max-width: 94% !important;
+ vertical-align: middle;
+}
+
+#loading_sec {
+    left: 0;
+    margin-top: -40px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+}
 
 /*================================= 404 Page =================================*/
 
@@ -1841,6 +1912,8 @@ font-size:34px;
 
 
 /*============================= Product Page =============================*/    
+.pro-img{margin-bottom:5px;}
+    
 .p-img-holder{ max-width: 440px;}
 .pro-img{ margin-right: 15px; margin-bottom: 15px;}
 .gal-link .p-img-holder {padding: 19px 20px;}
@@ -1877,6 +1950,11 @@ font-size:34px;
 }
 .contct-frm{padding: 30px;}
     
+    
+.banner .carousel-indicators {
+    left:13%;
+}
+    
 /*============================= Contact Page =============================*/
 .divide-3 h4 {font-size: 16px;}
 .last-contact {padding-left: 5.5%;}
@@ -1891,9 +1969,38 @@ font-size:34px;
 }
 /*============================= Product Page =============================*/
     
+    
+ .site-main {
+    padding: 11% 0;
+}
+    
 }
 
 @media screen and (max-width:767px) {
+
+.err {
+    font-size: 40px;
+}
+    
+.error-form.form_two div {top:-15px;}
+    
+    
+.light-gal {
+    margin-left: 0;
+}
+
+.gal {
+    padding:15px;
+}
+
+
+.content {
+    margin-top: 23px;
+}
+    
+.banner .carousel-control.right::after, .banner .carousel-control.left::after{top:26px; width:20px; height:3px;}
+.banner .carousel-control.right::before, .banner .carousel-control.left::before{ width:20px; top:11px; height:3px;}    
+.capt-banner{display: none;}
     
 .about-content h1{font-size:26px;}
 .about-content p {
@@ -2008,12 +2115,28 @@ font-size:34px;
 .quote-side h1, .contct-frm h2{font-size:26px;}
 
 /*============================= Product Inner Page =============================*/    
+.pro-img {margin-bottom: 5px;}
+.product-area p {
+font-size: 14px;
+line-height: 20px;
+}
+    
+    
+    
 .light-gal > li {
     height: 200px;
     width: 49.5%;
 }
     .p-list a{ font-size: 16px;}
     .product-item h2, .product-item a h2, .product-sidebar h3{ font-size: 20px;}
+    
+    
+.p-list > ul {margin-top: 20px; margin-left: 0;}
+.p-list li {margin-bottom: 10px;}
+    
+    
+.product-inner .button_sec a{float:left; margin-top: 0; margin-bottom: 20px; padding: 8px 20px;}
+.product-inner .button_sec h1 {display: block;}    
 /*============================= Product Inner Page =============================*/    
 
     
@@ -2066,7 +2189,8 @@ font-size:34px;
     
 /*============================= Footer =============================*/
     
-    
+
+.pro-img{float: none; display: block; margin-bottom: 15px;}
 .pro-img > a{display:inline-block;}  
 .three-col{text-align:center;}
 .three-col .img-holder{margin:0 auto;}
@@ -2075,6 +2199,11 @@ font-size:34px;
 .h-dimension .form-group .form-control{ width: 100%;}
 .mks-n-modl .form-group label{margin-left: 0;}
 .quote-section .form-inline .form-control{margin-left: 0;}
+
+.quote-section form .radio{margin-left: -15px;}    
+.quote-section form .radio .quote-label{margin-left: 0px !important;}
+.quote-section form .radio .quote-label + label{margin-left: 0px;}
+    
 .h-dimension{margin-left: 0;}
 .h-dimension .form-group{padding-left: 0px; padding-right: 0px;}
 .h-dimension .set-width-resp{width:100% !important;}
@@ -2084,10 +2213,13 @@ font-size:34px;
     
 }
 
+@media screen and (max-width:619px) {
+    .light-gal{margin-left: 0;}
+}
 
 
 @media screen and (max-width:480px) {
-    .capt-banner{display: none;}
+    
 .process {
     float: none;
     height: auto;
@@ -2095,6 +2227,13 @@ font-size:34px;
     max-width: 90%;
     min-height: inherit;
 }
+.process a span {
+    display: inline-block;
+    height: 50px;
+    width: 90px;
+    margin-top: 10px;
+}    
+    
 .three-col .img-holder, .gal-link .p-img-holder {padding: 7.3% 7.8%; max-width: 440px;}
     .product-item{padding: 10px;}
 .g-recaptcha {
@@ -2104,10 +2243,17 @@ font-size:34px;
 }
     
 /*============================= Product Inner Page =============================*/    
+.p-list > ul{margin:10px 0;}
+.button_sec a{float:left;}
+
+    
 .light-gal > li {
   height: 120px;
   width: 49%;
 }
+    
+    .html5-prev-touch, .html5-next-touch{ display: none !important;}
+    #html5-prev, #html5-next{display: block !important;}
 /*============================= Product Inner Page =============================*/    
 
 /*============================= Gallery Page =============================*/    
