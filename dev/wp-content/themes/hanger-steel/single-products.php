@@ -132,8 +132,10 @@ function get_numerics ($str)
 							  <h1><?php the_title(); ?></h1>
 							
 							 </div>
-                           <p><?php    the_content(); ?></p>
-						        
+                          <?php the_content(); ?>
+						       
+                           <a class="call" href="tel:<?php the_field('footer_subbb_add',5);?>"> <?php the_field('call_product',5);?> <?php the_field('footer_subbb_add',5);?></a>
+                             
 							  <?php
 							    endwhile;
 					              endif;

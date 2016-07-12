@@ -3,7 +3,9 @@
 
   <?php get_header(); ?>
   
+
  <?php
+ while (have_posts()) : the_post(); 
 function get_numerics ($str)
 {
 	preg_match_all('/\d+/', $str, $matches);
@@ -14,16 +16,7 @@ function get_numerics ($str)
   $post_id = get_the_ID ();
   ?>
  
-  <!--<style>
-  #signupForm {
-		width: 670px;
-	}
-	#signupForm label.error {
-		margin-left: 10px;
-		width: auto;
-		display: inline;
-	}
-	</style>-->
+  
     <!-- Banner Section Starts-->
     <section class="banner">
         <div class="container">
@@ -104,12 +97,10 @@ function get_numerics ($str)
         <div class="container">
    <div class="common-content arctct">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h2><?php the_field('arct_title');?></h2>
-                    <p><?php the_field('arct_sub1');?></p>
+                     <h2><?php the_title(); ?></h2>
+                 <p><?php echo get_the_content($post_id); ?></p>
 
-                    <p><?php the_field('arc_sub2');?></p>
-
-                    <p><?php the_field('arc_sub3');?></p>
+                    
                 </div>
 				<div class="success" style="display:none;">
                 <div id="success_form" >
@@ -153,7 +144,7 @@ function get_numerics ($str)
                             </label>
                         </div>
 
-                        <div class="radio">
+                       <!-- <div class="radio">
                             <label>Architect : </label>
                             <label>
                                 Building
@@ -163,14 +154,20 @@ function get_numerics ($str)
                             <label>Manufacture
                                 <input type="radio" name="optionsRadios2" value="Manufacture">
                             </label>
-                        </div>
+                        </div>-->
                         <div class="form-group doc-arc">
                             <label for="exampleInputFile">Attachment :</label>
                             <!--<input type="file" class="inputfile" name="uploaded"  value="upload">-->
 							<input id="file_upload" name="filee" type="file" multiple="true" class="valid inputfile" onchange="change_file_stru();">
                             <label>Browse</label>
                             <arcfilename>No file selected</arcfilename>
+							
+							<label class="unique"> (these files should be accepted "docx,doc,png,xlsx,xls,mp4,pdf,mp3,bmp,jpg,tiff,txt,jpeg,dwg")
+						       </label>
                         </div>
+						
+						
+						
                          <div class="form-group">
                                 <label for="Email1"><i class="fa fa-envelope" aria-hidden="true"></i> Message
                                 </label>
@@ -323,6 +320,7 @@ function get_numerics ($str)
 </div>
  
     </section>
+	<?php endwhile; ?>
     <!-- Content Section Ends-->
  
 

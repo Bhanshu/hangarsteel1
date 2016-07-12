@@ -30,7 +30,7 @@
 					 
                           <?php
 	
-                          $my_query = new WP_Query('post_type=slider&posts_per_page=5');
+                          $my_query = new WP_Query('post_type=slider&posts_per_page=5&orderby=date&order=ASC');
                               $i=1;
                                  while ($my_query->have_posts()) : $my_query->the_post(); 
 	                         ?>

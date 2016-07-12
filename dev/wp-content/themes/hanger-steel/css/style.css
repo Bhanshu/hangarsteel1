@@ -652,6 +652,15 @@ nav.navbar {
 
 
 /*================================== Architect Page ==================================*/
+.unique {
+  color: #999 !important;
+  display: block !important;
+  font-size: 12px !important;
+  font-weight: 100 !important;
+  line-height: 12px;
+  margin-top: 8px;
+}
+
 
 .arctct {
     display: inline-block;
@@ -969,7 +978,7 @@ arcfilename {
     background-color: rgba(0, 0, 0, 0.36);
     display: inline-block;
     float: left;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-right: 40px;
     padding: 15px;
     position: relative;
@@ -993,6 +1002,8 @@ arcfilename {
     top: 2px;
     width: 12px;
 }
+
+
 
 .pro-img span {
     display: block;
@@ -1593,6 +1604,29 @@ arcfilename {
 
 /*================================= 404 Page =================================*/
 
+
+.product-item p a {
+  color: #d99a01;
+}
+.arctct p strong {
+  display: block;
+  margin: 10px 0 5px;
+}
+.call {
+  color: #d99a01;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.call:hover {
+  color: #fff;
+}
+
+.product-item.new_class {
+  background-color: transparent;
+  text-align: center;
+}
+
+
 @media screen and (min-width:1500px) {
     .container {
         width: 1470px;
@@ -1777,6 +1811,24 @@ font-size:34px;
 
 /*============================= Technical Info Page =============================*/
     
+/*========== NEW CONTENT CHANGES ==========*/
+.capt-banner h2 {
+  font-size: 54px;
+}
+.capt-banner h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.about-content h1 {
+   margin-top: 0;
+}
+.about-content > a {
+  margin-top: 30px;
+}    
+
+/*========== NEW CONTENT CHANGES ==========*/    
+
 }
 
 
@@ -1973,6 +2025,17 @@ font-size:34px;
  .site-main {
     padding: 11% 0;
 }
+
+/*========== AFTER CONTENT CHANGES ==========*/
+.capt-banner h2 {
+  font-size: 34px;
+}
+.capt-banner {
+   right: 8%;
+}
+
+/*========== AFTER CONTENT CHANGES ==========*/
+
     
 }
 

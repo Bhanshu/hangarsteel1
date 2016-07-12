@@ -363,7 +363,7 @@ jQuery('form').clearForm();
 					else
 					{
 					var file_typpe = value_file.split('.').pop();
-					if(file_typpe=="pdf"|| file_typpe=="doc" || file_typpe=="docx" || file_typpe=="xls" ||file_typpe=="xlsx" ||file_typpe=="jpeg" ||file_typpe=="png" ||file_typpe=="mp3" ||file_typpe=="mp4" ||file_typpe=="bmp" ||file_typpe=="tiff" || file_typpe=="jpg" ||file_typpe=="txt")
+					if(file_typpe=="pdf"|| file_typpe=="doc" || file_typpe=="docx" || file_typpe=="xls" ||file_typpe=="xlsx" ||file_typpe=="jpeg" ||file_typpe=="png" ||file_typpe=="mp3" ||file_typpe=="mp4" ||file_typpe=="bmp" ||file_typpe=="tiff" || file_typpe=="jpg" ||file_typpe=="txt"||file_typpe=="dwg")
 					{
 						jQuery("arcfilename").text(value_file);
 						jQuery("<a href='javascript:void(0);' class='button-black remove_button' onclick='remove_library()'>x</a>").insertAfter("arcfilename");
@@ -371,7 +371,7 @@ jQuery('form').clearForm();
 					else
 					{
 						jQuery("#file_upload").val("");
-						jQuery("arcfilename").text("Please add docx,doc,png,xlsx,xls,mp4,pdf,mp3,bmp,jpg,tiff,txt,jpeg files only");
+						jQuery("arcfilename").text("Please add docx,doc,png,xlsx,xls,mp4,pdf,mp3,bmp,jpg,tiff,txt,jpeg,dwg files only");
 					}
 					
 					}
@@ -453,6 +453,11 @@ jQuery('form').clearForm();
 };
 	
 
+		</script>
+		<script>
+     if(jQuery("#homepage-flag").length > 0) { 
+      jQuery( ".product-item" ).last().addClass( "new_class" );
+	 }
 		</script>
 		
 </body>

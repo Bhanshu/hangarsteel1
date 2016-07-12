@@ -1,8 +1,12 @@
 <?php
 session_start();
 $_SESSION['test'];
+
  /* Template Name: tech_info */ ?>
-  <?php get_header(); ?>
+  <?php get_header();
+$idObj = get_term_by('slug', $_SESSION['test'], 'tech_category');
+
+ ?>
   <?php
 function get_numerics ($str)
 {
@@ -96,11 +100,12 @@ function get_numerics ($str)
             <div class="common-content product-area tech-spec">
                 <div class="col-lg-12">
 				<?php while ( have_posts() ) : the_post();	?>
-                  <?php the_content(); ?>
+<h1 class="gen-heading"><?php echo $idObj->name; ?></h1>
+				  <p><?php echo $idObj->description; ?></p>
 					<?php endwhile; wp_reset_query(); ?>
 								<?php
 								global $post;
-								query_posts( array ( 'post_type' => 'tech_specifications' ,'posts_per_page' => 5 , 'order' => 'DESC' , 'tech_category' => $_SESSION['test'])  ); ?>
+								query_posts( array ( 'post_type' => 'tech_specifications' ,'posts_per_page' => 5 , 'order' => 'ASC' , 'tech_category' => $_SESSION['test'])  ); ?>
 								<?php while ( have_posts() ) : the_post();
 
 								?>

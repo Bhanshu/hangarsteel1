@@ -187,14 +187,14 @@ function get_numerics ($str)
 
                         <div class="col-lg-12">
                                 <div class="radio">
-                                    <label class="quote-label">Please Contact me By : </label>
+                                    <label class="quote-label"> Desired Hangar Delivery: </label>
                                     <label>
-                                        Phone
+                                        60-90 days
                                         <input id="phn" type="radio" name="optionsRadios1" value="Phone">
                                     </label>
 
                                     <label>
-                                        Email
+                                        120-160 days
                                         <input id="eml" type="radio" name="optionsRadios1" value="Emaiil" checked>
                                     </label>
                                 </div>
@@ -259,7 +259,7 @@ function get_numerics ($str)
                     
                     <div class="col-lg-12">
                                 <div class="radio">
-                                    <label class="quote-label">Please Contact me By : </label>
+                                    <label class="quote-label"> Office : </label>
                                     <label>
                                         Yes
                                         <input type="radio" id="ys" name="option1" value="Yes">
@@ -278,13 +278,11 @@ function get_numerics ($str)
 							<input id="file_upload" name="filee" type="file" multiple="true" class="valid inputfile" onchange="change_file_stru();">
                             <label>Browse</label>
                             <arcfilename>No file selected</arcfilename>
+							
+							<label class="unique"> (these files should be accepted "docx,doc,png,xlsx,xls,mp4,pdf,mp3,bmp,jpg,tiff,txt,jpeg,dwg")
+						       </label>
                         </div>
                     
-                    
-                    
-                        
-
-                        
                             <div class="form-group">
                                 <label for="Email1"><i class="fa fa-envelope" aria-hidden="true"></i> Message
                                 </label>
