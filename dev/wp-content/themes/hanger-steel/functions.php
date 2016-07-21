@@ -566,6 +566,7 @@ function codex_int_tech_specifications() {
 function custom_loginlogo() {
 echo '<style type="text/css">
 h1 a {background-image: url('.get_bloginfo('template_directory').'/images/logo.png) !important; }
+.login h1 a:focus{box-shadow:none !important; -webkit-box-shadow:none !important; -moz-box-shadow:none !important;}
 </style>';
 }
 add_action('login_head', 'custom_loginlogo');

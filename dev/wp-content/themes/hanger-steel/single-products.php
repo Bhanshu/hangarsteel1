@@ -15,7 +15,8 @@ function get_numerics ($str)
 }
 ?>
   <?php 
-  $post_id =12;
+  
+   $id= get_the_ID();
   ?>
 
     <!-- Banner Section Starts-->
@@ -26,7 +27,7 @@ function get_numerics ($str)
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Carousel indicators -->
                     <ol class="carousel-indicators">
-							  <?php  $one1 = get_post_meta($post_id,'gallery',true); ?>
+							  <?php  $one1 = get_post_meta($id,'slider',true); ?>
 							    <?php
                                            $arr1=get_numerics($one1);
 										   $i=1;
@@ -51,7 +52,7 @@ function get_numerics ($str)
                     <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
 					 
-	<?php  $one1 = get_post_meta($post_id,'gallery',true); ?>
+	<?php  $one1 = get_post_meta($id,'slider',true); ?>
 							    <?php
                                            $arr1=get_numerics($one1);
 										   $i=1;

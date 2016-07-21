@@ -96,12 +96,11 @@ function get_numerics ($str)
     <section class="content">
         <div class="container">
    <div class="common-content arctct">
+
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                      <h2><?php the_title(); ?></h2>
-                 <p><?php echo get_the_content($post_id); ?></p>
-
-                    
-                </div>
+				     <p><?php the_content($post_id); ?></p>
+                 </div>
 				<div class="success" style="display:none;">
                 <div id="success_form" >
 						   <h2> SUCCESS!!!</h2>
